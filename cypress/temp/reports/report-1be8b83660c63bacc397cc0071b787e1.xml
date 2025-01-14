@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.994" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-01-09T20:56:04" tests="0" file="cypress\specs\regression\public-game.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Base" timestamp="2025-01-09T20:56:04" tests="3" time="7.983" failures="0">
+    <testcase name="Base Page title" time="2.760" classname="Page title">
+    </testcase>
+    <testcase name="Base Url should be /public-game" time="1.419" classname="Url should be /public-game">
+    </testcase>
+    <testcase name="Base Create game" time="3.734" classname="Create game">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="13.496" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-01-09T20:54:56" tests="0" file="cypress\specs\regression\public-game.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Base" timestamp="2025-01-09T20:54:56" tests="3" time="13.490" failures="1">
+    <testcase name="Base Page title" time="2.865" classname="Page title">
+    </testcase>
+    <testcase name="Base Url should be /public-game" time="1.531" classname="Url should be /public-game">
+    </testcase>
+    <testcase name="Base Create game" time="0.000" classname="Create game">
+      <failure message="Timed out retrying after 8050ms: `cy.click()` failed because this element is `disabled`:
+
+`&lt;button class=&quot;custom-tooltip btn btn-sm btn-warning button-with-tooltip&quot; id=&quot;create-game-button&quot; disabled=&quot;&quot;&gt;...&lt;/button&gt;`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with" type="CypressError"><![CDATA[CypressError: Timed out retrying after 8050ms: `cy.click()` failed because this element is `disabled`:
+
+`<button class="custom-tooltip btn btn-sm btn-warning button-with-tooltip" id="create-game-button" disabled="">...</button>`
+
+Fix this problem, or use `{force: true}` to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+    at Object.isNotDisabled (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:144923:58)
+    at runAllChecks (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:113250:26)
+    at retryActionability (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:113339:16)
+    at tryCatcher (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:1830:23)
+    at Promise.attempt.Promise.try (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:4338:29)
+    at whenStable (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:143744:68)
+    at <unknown> (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:143685:14)
+    at tryCatcher (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:1830:23)
+    at Promise._settlePromiseFromHandler (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:1542:31)
+    at Promise._settlePromise (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:1599:18)
+    at Promise._settlePromise0 (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:1644:10)
+    at Promise._settlePromises (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:1724:18)
+    at Promise._fulfill (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:1668:18)
+    at <unknown> (https://maf-place-qa-fe.azurewebsites.net/__cypress/runner/cypress_runner.js:5473:46)
+From Your Spec Code:
+    at Object.createGame (webpack://mafplace/./cypress/specs/pages/public-game.js:23:40)
+    at Context.eval (webpack://mafplace/./cypress/specs/regression/public-game.js:15:19)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
