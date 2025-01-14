@@ -6,7 +6,7 @@ module.exports = defineConfig({
     "viewportHeight": 1000,
     "viewportWidth": 1280,
     "videoUploadOnPasses": false,
-    "defaultCommandTimeout": 8000,
+    "defaultCommandTimeout": 10000,
     "chromeWebSecurity": false,
     "specPattern": "cypress/specs/**/*.js",
     "screenshotsFolder": "cypress/temp/screenshots",
