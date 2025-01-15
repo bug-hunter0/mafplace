@@ -8,7 +8,16 @@ const selectors ={
     nickNameInput:"#add_player_field",
     addPlayerBtn:"#add_player_button",
     randomeSettingsCheckBox:"#random-seating",
-    createGameBtn: "#create-game-button"
+    createGameBtn: "#create-game-button",
+    idGame: "#id-value",
+    gameSearchTab:"#search-tab",
+    searchGameField: "#search_game_field",
+    searchGameButton: "#search_game_button",
+    continueGameBtn: "#continue-game-button",
+    noGameMessage: "#no-game-message",
+    startGameBtn: "#start-game-button",
+    resultPhase: "#result-phase",
+    resultDate: "#result-date",
 } 
 
 
