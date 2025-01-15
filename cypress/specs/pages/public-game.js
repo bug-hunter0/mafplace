@@ -18,6 +18,7 @@ const selectors ={
     startGameBtn: "#start-game-button",
     resultPhase: "#result-phase",
     resultDate: "#result-date",
+    timeLeft: "#time-left"
 } 
 
 

@@ -55,4 +55,16 @@ describe("Public Game Tests", () => {
         expect(dateGame).to.equal(formattedCurrentDate);
       });
   });
+  it("Initial game is started",()=>{
+    cy.get(PublicGame.selectors.continueGameBtn).click();
+    cy.url().should("include", "/game/initial");
+    //expect(gameId).should('be.visible');
+  })
+  it("Time left is visible and 00:00",()=>{
+    cy.get(PublicGame.selectors.timeLeft).should("be.visible");
+    cy.get(PublicGame.selectors.timeLeft).invoke("text").then((text)=>{
+         expect(text).to.equal("00:00");
+    });
+  })
+
 });
