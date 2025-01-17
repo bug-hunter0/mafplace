@@ -4,8 +4,9 @@ describe("Public Game Tests", () => {
   let gameId;
 
   it("Verify base page title", () => {
-    cy.visit("/public-game");
-    cy.title().should("eq", "The Maf Place");
+    cy.visit(PublicGame.selectors.baseUrl);
+    cy.title().should("eq", PublicGame.expected.pageTitle);
+
   });
 
   it("Url should be /public-game", () => {
@@ -38,7 +39,9 @@ describe("Public Game Tests", () => {
       .then((text) => {
         const result = text.trim(); // Trim any extra whitespace
         cy.log("Result phase:", result);
-        expect(result).to.match(/^initial \d+$/); // Match "initial" followed by a number
+        //expect(result).to.match(/^initial \d+$/); // Match "initial" followed by a number
+        expect(result).to.match(PublicGame.expected.initialResult); // Match "initial" followed by a number
+
       });
   });
 
@@ -58,7 +61,7 @@ describe("Public Game Tests", () => {
   it("Initial game is started",()=>{
     cy.get(PublicGame.selectors.continueGameBtn).click();
     cy.url().should("include", "/game/initial");
-    //expect(gameId).should('be.visible');
+    
   })
   it("Time left is visible and 00:00",()=>{
     cy.get(PublicGame.selectors.timeLeft).should("be.visible");

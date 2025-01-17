@@ -1,4 +1,5 @@
 const selectors ={
+    baseUrl: "/public-game",
     btnGame: "#btn-game",
     backToLoginBtn: "#btn-back-to-login",
     maleIcon: "#male-icon",
@@ -20,6 +21,11 @@ const selectors ={
     resultDate: "#result-date",
     timeLeft: "#time-left"
 } 
+const expected ={
+    initialGameUrl: "/game/initial",
+    initialResult: /^initial \d+$/,
+    pageTitle: "The Maf Place"
+}
 
 
 
@@ -37,5 +43,6 @@ const createGame=()=>{
 export default{
     goToPublicGame,
     createGame,
-    selectors
+    selectors,
+    expected
 }
