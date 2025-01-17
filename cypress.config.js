@@ -10,7 +10,7 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     defaultCommandTimeout: 10000,
     chromeWebSecurity: false,
-    specPattern: "cypress/specs/regression/**/*.js",
+    specPattern: "cypress/specs/*/**/*.js",
     screenshotsFolder: "cypress/temp/screenshots",
     videosFolder: "cypress/temp/videos",
     reporter: "junit",
