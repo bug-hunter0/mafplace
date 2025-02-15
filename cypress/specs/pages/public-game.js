@@ -19,7 +19,9 @@ const selectors ={
     startGameBtn: "#start-game-button",
     resultPhase: "#result-phase",
     resultDate: "#result-date",
-    timeLeft: "#time-left"
+    timeLeft: "#time-left",
+    musicButton:'#header-menu .content-left #music-btn-muted',
+    musicButtonPlaying:'#header-menu .content-left #music-btn-playing',
 } 
 const expected ={
     initialGameUrl: "/game/initial",

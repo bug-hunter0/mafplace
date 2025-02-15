@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec 'cypress/specs/regression/*' --headed --browser=chrome",
+    "test": "cypress run --spec 'cypress/specs/regression/*' --headed --browser=chrome --no-exit",
     "api": "cypress run --spec 'cypress/specs/api/*' --headed --browser=chrome"
   },
   "keywords": [],
